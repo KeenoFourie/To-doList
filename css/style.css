@@ -92,8 +92,6 @@ body {
     border-radius: 0.2rem;
     font-weight: bold;
     padding: 0.1rem 0.2rem 0.1rem;
-    position: absolute;
-    right: 10rem;
 }
 .blocked {
     border: 2px solid black;
@@ -102,9 +100,4 @@ body {
     padding: 0.2rem;
     box-shadow: 0.5rem 0.5rem;
     margin-top: 1.5rem;
-}
-.hi {
-    position: absolute;
-    left: 10rem;
-    margin-top: 0.2rem;
 }
