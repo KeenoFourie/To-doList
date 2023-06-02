@@ -1,0 +1,69 @@
+/* Body */
+body {
+    background-color: rgb(175, 93, 175);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+}
+/* Container containing all the contents */
+.container-fluid {
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem;
+    margin: auto;
+    margin-top: 11rem;
+    width: 30rem;
+}
+/* Main heading */
+#heading_style {
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: rgb(141, 21, 87);
+    box-shadow: 0.2rem 0.2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 15rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+/* Input your to-do list item */
+#input_item {
+    font-size: medium;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.448);
+}
+/* Buttons for functionality */
+#add_button {
+    font-size: medium;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+} 
+#sort_button {
+    font-size: medium;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
+#add_button:hover, #sort_button:hover {
+    background-color: rgb(141, 21, 87);
+    box-shadow: none;
+}
