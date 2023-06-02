@@ -1,18 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
     background-color: rgb(175, 93, 175);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    margin: auto;
     font-size: large;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /* Container containing all the contents */
 .container-fluid {
     border: 2px solid black;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem;
-    margin: auto;
-    margin-top: 11rem;
     width: 30rem;
 }
 /* Main heading */
@@ -52,6 +61,7 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 } 
 #sort_button {
     font-size: medium;
@@ -62,9 +72,39 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 #add_button:hover, #sort_button:hover {
     background-color: rgb(141, 21, 87);
     box-shadow: none;
 }
+/* Listing of your item */
+#listing_of_your_item {
+    margin: auto;
+    font-size: large;
+    width: 30rem;
+    margin-top: 2rem;
+}
 /* Javascript styling */
+#clear_button {
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    padding: 0.1rem 0.2rem 0.1rem;
+    position: absolute;
+    right: 10rem;
+}
+.blocked {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    box-shadow: 0.5rem 0.5rem;
+    margin-top: 1.5rem;
+}
+.hi {
+    position: absolute;
+    left: 10rem;
+    margin-top: 0.2rem;
+}

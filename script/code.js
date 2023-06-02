@@ -7,11 +7,12 @@ let to_DoList = []
 
 // Add item to local storage
 addItem.addEventListener("click", ()=> {
-    (input_item.value)
-        to_DoList.push(input_item.value)
-        input_item.value = "";
-    if(Input = "") {
-        
+    if(Input.value) {
+        to_DoList.push(Input.value)
+        Input.value = ""
+    }
+    else {
+        Input.style = "outline: 2px solid red; border: none;"
     }
     
     
@@ -23,10 +24,15 @@ addItem.addEventListener("click", ()=> {
 addItem.addEventListener("click", ()=> {    
     to_DoList.forEach( (item) => {
         output_list.innerHTML += `
-            <li>${item} <button id="clear_button" onclick="clear()">x</button> </li>
+            <div class="blocked"><input class="hi" type="checkbox"> ${item} <button id="clear_button">x</button> </div>
         `
     })
 });
 
 // Clear button
-let clear = document.querySelector("#clear_button");
+
+let clear = document.querySelector("#clear_button")
+
+clear.addEventListener("click", ()=> {
+    output_list = Input.slice(Input.length)
+})
